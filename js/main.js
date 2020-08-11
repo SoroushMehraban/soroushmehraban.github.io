@@ -1,11 +1,16 @@
 // home terminal
+const hour = new Date().getHours();
+var dayStatus = 'day'
+if (hour >= 20)
+    dayStatus = 'night'
+
 const typed = new Typed('.terminal-text', {
     strings: [
         '$',
         '$ Hello There!',
         "$ I'm Soroush Mehraban, a junior developer.",
         '$ Here you can see my resume.',
-        '$ Have a great day!'
+        `$ Have a great ${dayStatus}!`
     ],
     showCursor: true,
     cursorChar: '|',
@@ -17,7 +22,6 @@ const typed = new Typed('.terminal-text', {
     backDelay: 2000,
     backSpeed: 20,
 });
-
 
 
 
