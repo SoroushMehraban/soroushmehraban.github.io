@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /
 author_profile: true
 redirect_from:
@@ -19,13 +19,6 @@ Publications
 ======
   <script src="https://bibbase.org/show?bib={{ base_path }}/files/SMehraban.bib&jsonp=1&theme=default"><script>
 
-
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 
 Skills
 ======
