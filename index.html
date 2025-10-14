@@ -31,7 +31,7 @@
                     I'm a fourth-year PhD student at University of Toronto, advised by <a
                       href="https://www.cs.toronto.edu/~taati/">Dr. Babak Taati</a> , and Faculty Affiliate Researcher at
                     <a href="https://vectorinstitute.ai/" class="href">Vector institute</a> . My research focuses on
-                    analyzing videos for human motion analysis including 3D human pose estimation, 3D human mesh recovery, action recognition, and gait assessment. I'm currently doing an internship in <a href="https://pickford.ai/" class="href">Pickford AI</a>, focusing on video style transferring.
+                    analyzing videos for human motion analysis including 3D human pose estimation, 3D human mesh recovery, action recognition, and gait assessment. I'm currently doing an internship in <a href="https://pickford.ai/" class="href">Pickford AI</a>, focusing on real-time 3D animation generation.
                   </p>
                   <p style="text-align:center">
                     <a href="mailto:soroush.mehraban@mail.utoronto.ca">Email</a> &nbsp;/&nbsp;
@@ -68,6 +68,64 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+              
+              <tr>
+                <td style="padding:20px;width:30%;max-width:30%" align="center">
+                  <video style="width:100%;max-width:100%" autoplay muted loop playsinline>
+                    <source src="videos/fasthmr.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://soroushmehraban.github.io/FastHMR/">
+                    <span class="papertitle">FastHMR: Accelerating Human Mesh Recovery via Token and Layer Merging with Diffusion Decoding                    </span>
+                  </a>
+                  <br>
+                  <strong>Soroush Mehraban</strong>,
+                  <a href="https://psychiatry.utoronto.ca/faculty/andrea-iaboni">Andrea Iaboni</a>,
+                  <a href="https://www.cs.toronto.edu/~taati/">Babak Taati</a>
+                  <br>
+                  <em>arXiv</em>
+                  <br>
+                  <a href="https://soroushmehraban.github.io/FastHMR/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2510.10868">arXiv</a>
+                  <p></p>
+                  <p>
+                    FastHMR introduces two merging strategies, Error Constrained Layer Merging (ECLM) and Mask guided Token Merging (Mask ToMe), to reduce computational cost and redundancy in transformer based 3D Human Mesh Recovery. ECLM selectively merges layers with minimal impact on MPJPE, while Mask ToMe merges background tokens that contribute little to prediction. A diffusion based decoder further enhances performance by using temporal context and pose priors. The method achieves up to 2.3x faster inference while slightly improving accuracy across benchmarks.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:30%;max-width:30%" align="center">
+                  <video style="width:100%;max-width:100%" autoplay muted loop playsinline>
+                    <source src="videos/pickstyle.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://pickstyle.pickford.ai/">
+                    <span class="papertitle">PickStyle: Video-to-Video Style Transfer with Context-Style Adapters</span>
+                  </a>
+                  <br>
+                  <strong>Soroush Mehraban*</strong>,
+                  <a href="https://vadeli.github.io/">Vida Adeli*</a>,
+                  <a href="">Jacob Rommann</a>,
+                  <a href="https://www.cs.toronto.edu/~taati/">Babak Taati</a>
+                  <a href="https://kyrylai.com/">Kyryl Truskovskyi</a>
+                  <br>
+                  <em>arXiv</em>
+                  <br>
+                  <a href="https://pickstyle.pickford.ai/">project page</a>
+                  /
+                  <a href="https://arxiv.org/abs/2510.07546">arXiv</a>
+                  <p></p>
+                  <p>
+                    PickStyle is a diffusion-based video style transfer framework that preserves video context while applying a target visual style. It uses low-rank style adapters and synthetic clip augmentation from paired images for training, and introduces Context-Style Classifier-Free Guidance (CS-CFG) to independently control content and style, achieving temporally consistent and style-faithful video results.
+                  </p>
+                </td>
+              </tr>
 
               <tr>
                 <td style="padding:20px;width:30%;max-width:30%" align="center">
